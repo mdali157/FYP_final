@@ -16,10 +16,9 @@ from django.http import HttpResponse
 
 # Create your views here.
 def logout_views(request):
-    if request.method == 'POST':
-        logout(request)
-        # return redirect('dashboard:dashboard_view')
-        return login_view(request)
+    logout(request)
+    # return redirect('dashboard:dashboard_view')
+    return login_view(request)
 
 def login_view(request):
     if request.method == 'POST':

@@ -18,7 +18,7 @@
             <div class="col-2 mt-3" style="margin-left: -40px">
                 {% if detail.name == None  %}
                     <a href="{% url 'dashboard:updateinfo'  %}" class="btn btn-sm btn-outline-secondary"><i class="fas fa-plus"></i> Edit</a>
-                    <a href="{% url 'employee:employeepic' id=id %}" class="btn btn-sm btn-outline-secondary"><i class="fas fa-plus"></i>  Add Picture</a>
+{#                    <a href="{% url 'employee:employeepic' id=id %}" class="btn btn-sm btn-outline-secondary"><i class="fas fa-plus"></i>  Add Picture</a>#}
 
                 {% else %}
                     <a href="{% url 'dashboard:updateinfo'  %}" class="btn btn-sm btn-outline-secondary"><i class="fas fa-plus"></i> Edit</a>
